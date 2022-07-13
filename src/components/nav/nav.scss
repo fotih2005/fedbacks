@@ -1,0 +1,123 @@
+@import '../../assets/scss/mixin.scss';
+@import '../../assets/scss/veriable.scss';
+
+.site-nav{
+    width: 260px;
+    margin-right: 50px;
+}
+.site-nav__header-card{
+    width: 260px;
+    padding: 60px 0 24px 24px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    color: #fff;
+    background-image: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+}
+.site-nav__card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.site-nav__card-text{
+    font-size: 15px;
+}
+.site-nav__cards{
+    @include list-unstyled;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    width: 255px;
+}
+.site-nav__cards{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.site-nav__card{
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+    position: relative;
+    margin-bottom: 14px;
+}
+.site-nav__card-input{
+    display: block;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $SINGAPORE;
+    background-color: #F2F4FF;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.sita-nav__checked-input{
+    display: none;
+}
+.sita-nav__checked-input:checked + .site-nav__card-input {
+    color: #fff;
+    background: $SINGAPORE;
+}
+.sita-nav__roadmap{
+    width: 100%;
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.site-nav__roadmap-cards{
+    // @include list-unstyled;
+    width: 255px;
+}
+.site-nav__roadmap-item{
+    &::before{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: red;
+        content: '';
+    }
+    display: flex;
+    position: relative;
+    width: 255px;
+    color: #647196;
+}
+.site-nav__roadmap-item:nth-child(1){
+    &::before{
+        background-color: #F49F85;
+    }
+}
+.site-nav__roadmap-item:nth-child(2){
+    &::before{
+        background-color: #AD1FEA;
+    }
+}
+.site-nav__roadmap-item:nth-child(3){
+    &::before{
+        background-color: #62BCFA;
+    }
+}
+.site-nav__roadmap-title-wrapper{
+    display: flex;
+}
+.site-nav__roadmap-title{
+    margin: 0;
+    color: #3A4374;
+}
+.site-nav__roadmap-link{
+    margin-left: auto;
+}
+
+.site-nav__roadmap-item-num{
+    position: absolute;
+    top: 0;
+    left: 210px;
+    font-weight: bold;
+}
+.site-nav__roadmap-link{
+    &:hover{
+        opacity: 0.6;
+    }
+    transition: opacity 0.3s ease;
+}

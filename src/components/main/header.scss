@@ -1,0 +1,51 @@
+@import '../../assets/scss/mixin.scss';
+@import '../../assets/scss/veriable.scss';
+
+.site-main{
+    flex-grow: 1;
+}
+.head-section{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #373F68;
+}
+.head-section__content-wrapper{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+}
+.head-section__text{
+    margin: 0;
+    margin-left: 10px;
+}
+.head-section__filter-wrapper{
+    display: flex;
+    align-items: center;
+}
+.head-section__select{
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #F2F4FE;
+    background-color: transparent;
+}
+.head-section__option{
+    color: #647196;
+    &:checked{
+        color: $SINGAPORE;
+    }
+}
+.head-section__add-btn{
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    background-color: $SINGAPORE;
+}

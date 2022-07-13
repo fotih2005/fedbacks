@@ -1,0 +1,55 @@
+@import '../../assets/scss/mixin.scss';
+@import '../../assets/scss/veriable.scss';
+
+.hero-section__cards{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.hero-section__card{
+    position: relative;
+    display: flex;
+    padding: 27px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.hero-section__card-content-wrapper{
+    margin-left: 40px;
+}
+.hero-section__card-btn{
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #F2F4FE;
+}
+.hero-section__card-btn-num{
+    margin: 0;
+}
+.hero-section__card-title{
+    margin: 0;
+    margin-bottom: 10px;
+    color: #3A4374;
+}
+.hero-section__card-text{
+    color: #647196;
+}
+.hero-section__comment-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.hero-section__comment-num{
+    margin-left: 8px;
+    font-weight: bold;
+}   
+.hero-section__card-sort{
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #4661E6;
+    background-color: #F2F4FF;
+}
