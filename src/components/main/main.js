@@ -2,6 +2,7 @@
 import "./main.scss";
 import Feedbacks from "./feedbacks";
 import Header from "../header/header";
+import { Link } from "react-router-dom";
 
 function main() {
   return (

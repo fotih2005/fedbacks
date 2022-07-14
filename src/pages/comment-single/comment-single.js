@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import CommentCard from "../../components/comments/commnet-card"
 import Card from "../../components/main/card";
 
@@ -10,6 +10,8 @@ function CommentSingle (prop) {
     
     return(
         <>
+        <Link className="go-to-feedbacks" to={'/home'}>go to feedbacks</Link>
+
             {
                 <Card key={''} id={current.id} upvotes={current.upvotes} title={current.title} content={current.content} category={current.description}/>
             }

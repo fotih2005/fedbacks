@@ -5,7 +5,7 @@ function renderCards () {
     return (
         <>
             {
-                Data.map(user => <Card key={user.id} id={user.id} title={user.title} upvotes={user.upvotes} content={user.description} category={user.category}/>)
+                Data.map(user => <Card key={''} id={user.id} title={user.title} upvotes={user.upvotes} content={user.description} category={user.category}/>)
             }
         </>
     )
