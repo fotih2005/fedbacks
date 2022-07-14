@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Nav from './components/nav/nav'
-import Main from './components/main/main'
 import './components/container/container.scss'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import CommentSingle from './pages/comment-single/comment-single';
+import Data from './assets/data';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='container wrapper'>
-      <Nav />
-      <Main />
+    <BrowserRouter>
+    <div className='container'>
+      <Routes>
+        <Route path='/*' element={<Home/>}/>
+        <Route path='/single/:id' element={<CommentSingle data={Data}/> } />
+      </Routes>
     </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
