@@ -1,0 +1,27 @@
+@import '../../assets/scss/veriable.scss';
+
+.eror-section{
+    padding: 150px 220px;
+    border-radius: 10px;
+    color: #3A4374;
+    background-color: #fff;
+}
+.eror-section__content-wrapper{
+    text-align: center;
+}
+.eror-section__text{
+    width: 410px;
+}
+.eror-section__link{
+    display: block;
+    width: 175px;
+    padding: 15px 24px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff;
+    background-color: $SINGAPORE;
+}

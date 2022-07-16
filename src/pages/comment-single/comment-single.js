@@ -11,12 +11,11 @@ function CommentSingle (prop) {
     return(
         <>
         <Link className="go-to-feedbacks" to={'/home'}>go to feedbacks</Link>
-
             {
                 <Card key={''} id={current.id} upvotes={current.upvotes} title={current.title} content={current.content} category={current.description}/>
             }
             {
-                current.comments.map(comment => <CommentCard key={''} id={comment.id} content={comment.content} name={comment.user.name} userName={comment.user.username}/>)
+                current.comments.map(comment => <CommentCard key={comment.id} id={comment.id} content={comment.content} name={comment.user.name} userName={comment.user.username} image={comment.user.image}/>)
             }
             </> 
     )

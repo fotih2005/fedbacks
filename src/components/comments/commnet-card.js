@@ -5,7 +5,7 @@ function renderComment(prop) {
     <li className="comments-section__card" id={prop.id}>
       <img
         className="comments-section__card-img"
-        src={"https://unsplash.it/40/40"}
+        src={prop.image}
         alt=''
         width={40}
         height={40}

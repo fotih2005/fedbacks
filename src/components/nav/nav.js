@@ -10,25 +10,26 @@ const Nav = () => {
       </div>
       <ul className="site-nav__cards">
         <li className="site-nav__card">
-          <input className="sita-nav__checked-input" type="radio" id="all" />
+          <input name="filter" className="sita-nav__checked-input" type="radio" id="all" />
           <label className="site-nav__card-input" htmlFor="all">
             All
           </label>
         </li>
         <li className="site-nav__card">
-          <input className="sita-nav__checked-input" type="radio" id="ui" />
+          <input name="filter" className="sita-nav__checked-input" type="radio" id="ui" />
           <label className="site-nav__card-input" htmlFor="ui">
             UI
           </label>
         </li>
         <li className="site-nav__card">
-          <input className="sita-nav__checked-input" type="radio" id="ux" />
+          <input name="filter" className="sita-nav__checked-input" type="radio" id="ux" />
           <label className="site-nav__card-input" htmlFor="ux">
             UX
           </label>
         </li>
         <li className="site-nav__card">
           <input
+          name="filter"
             className="sita-nav__checked-input"
             type="radio"
             id="Enhancement"
@@ -39,6 +40,7 @@ const Nav = () => {
         </li>
         <li className="site-nav__card">
           <input
+          name="filter"
             className="sita-nav__checked-input"
             type="radio"
             id="bug"
@@ -50,6 +52,7 @@ const Nav = () => {
         </li>
         <li className="site-nav__card">
           <input
+          name="filter"
             className="sita-nav__checked-input"
             type="radio"
             id="feature"
